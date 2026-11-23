@@ -1,6 +1,6 @@
 # SimSites verify, in CI: replay a repo's approved sims against the app and report to SimSites with the commit, which is
 # what turns a pull request's SimSites check green (docs/integrations-plan.md). Use it as
-#   uses: yannickErp/simsites-plugin/plugin/action@main
+#   uses: ClipMania/simsites-plugin/plugin/action@main
 # against the PR's preview deploy (dev-url) or an app the job starts (start). Examples: docs/ci.md.
 name: SimSites verify
 description: Replay the approved sims against your app and report the result to SimSites, for the pull request's SimSites check.

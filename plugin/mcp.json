@@ -2,7 +2,7 @@
   "mcpServers": {
     "simsites": {
       "command": "npx",
-      "args": ["-y", "github:yannickErp/simsites-plugin", "mcp"]
+      "args": ["-y", "github:ClipMania/simsites-plugin", "mcp"]
     }
   }
 }

@@ -11,7 +11,7 @@ and the GitHub Action that verifies pull requests.
 In Claude Code:
 
 ```
-/plugin marketplace add yannickErp/simsites-plugin
+/plugin marketplace add ClipMania/simsites-plugin
 /plugin install simsites@simsites
 ```
 
@@ -21,15 +21,15 @@ Then, in your app's repo: `/simsites <the feature you want>`. The first time, it
 In Codex:
 
 ```
-codex plugin marketplace add yannickErp/simsites-plugin
+codex plugin marketplace add ClipMania/simsites-plugin
 ```
 
 then install **SimSites** from `/plugins` and ask: "Use the simsites skill to design <the feature>".
 
-In Cursor: Settings → Plugins → add `yannickErp/simsites-plugin` (or `/add-plugin` in the agent chat), then ask for the feature the same way.
+In Cursor: Settings → Plugins → add `ClipMania/simsites-plugin` (or `/add-plugin` in the agent chat), then ask for the feature the same way.
 
-Any other MCP client: run `npx -y github:yannickErp/simsites-plugin mcp` as a stdio server. It serves every `simsites` command as a
-tool and the method as a prompt. Sign in once from a terminal: `npx -y github:yannickErp/simsites-plugin auth <token>`.
+Any other MCP client: run `npx -y github:ClipMania/simsites-plugin mcp` as a stdio server. It serves every `simsites` command as a
+tool and the method as a prompt. Sign in once from a terminal: `npx -y github:ClipMania/simsites-plugin auth <token>`.
 
 In ChatGPT or the Claude app (review, comment, approve and share from a chat): add the connector
 `https://simsites.vercel.app/api/mcp` and sign in with GitHub.
@@ -48,13 +48,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.deployment.sha }}
-      - uses: yannickErp/simsites-plugin/plugin/action@main
+      - uses: ClipMania/simsites-plugin/plugin/action@main
         with:
           token: ${{ secrets.SIMSITES_TOKEN }}
           dev-url: ${{ github.event.deployment_status.environment_url }}
 ```
 
-More: [CI](https://github.com/yannickErp/simsites-plugin/blob/main/plugin/action/action.yml).
+More: [CI](https://github.com/ClipMania/simsites-plugin/blob/main/plugin/action/action.yml).
 
 ## Version
 

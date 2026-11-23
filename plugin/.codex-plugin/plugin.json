@@ -6,7 +6,7 @@
     "name": "Yannick Erpelding"
   },
   "homepage": "https://simsites.vercel.app",
-  "repository": "https://github.com/yannickErp/simsites-plugin",
+  "repository": "https://github.com/ClipMania/simsites-plugin",
   "keywords": ["simulation", "design", "e2e", "playwright", "spec"],
   "skills": "./skills/",
   "mcpServers": "./mcp.json",
